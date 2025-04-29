@@ -134,11 +134,3 @@ class AsyncBitrixManager:
                                                           "filter": {"NAME": folder_name}}))["ID"]
 
         return next_id
-
-
-async def main():
-    as_bx = AsyncBitrixManager()
-    id = await as_bx.get_folder_id("https://ideisruba.bitrix24.ru/workgroups/group/597/disk/path/folder_16735/Фотоотчёты%20по%20сделке%20_Дикаприо%20%20%2316735%20_/Фотоотчёт%20завоз%20Тулета/", 'Клиент Дикаприо  Сделка Дикаприо  #16735  Проект Прая')
-
-if __name__ == '__main__':
-    asyncio.run(main())
